@@ -417,8 +417,8 @@ class Nuclide:
                             s1 = s1.strip()
                             s2 = s2.strip()
                         else:
-                            s1 = [x for x in nuc_id if x in string.ascii_letters]
-                            s2 = [x for x in nuc_id if not (x in string.ascii_letters)].strip()
+                            s1 = ''.join([x for x in nuc_id if x in string.ascii_letters])
+                            s2 = ''.join([x for x in nuc_id if not (x in string.ascii_letters)]).strip()
                             
 
                         # Not sure of the order of s1 & s2,
